@@ -1,0 +1,56 @@
+.jumbotron{
+  height: 70%; 
+  /* border: 5px solid blue; */
+  background-color: rgb(101, 157, 189,0) !important;
+  margin-bottom: 0rem !important;
+  border-radius: 0 !important;
+  
+}
+
+.name { color: #111; 
+  font-family: 'Helvetica Neue', 
+  sans-serif; 
+  font-size: 100px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center; 
+}
+
+.title { color: #111; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 32px; 
+  margin: 0 0 72px; 
+  text-align: center; 
+}
+
+.button{
+  background-color: #659DBD !important;
+  border: 1px solid black !important;
+  border-radius: .75em !important;
+}
+
+.container{
+  /* border: 5px solid red; */
+}
+
+.row{
+  text-align: center; 
+}
+
+.col{
+ /* border: 5px solid blue */
+}
+
+.icon{
+  color :white;
+}
+
+.divider{
+  width: 5px;
+  height: auto;
+  display: inline-block;
+}
+
