@@ -1,15 +1,32 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap';
 import "./Projects.css";
+import ProjectCard from "../../ProjectCard/ProjectCard"
+import Deck from "../../Deck/Deck";
 
-const Projects = (props) => {
+class Projects extends React.Component {
+    state = {
+        data: [
+            {
+                "projectTitle": "Project Title",
+                "projectIcons": "Icons",
+                "projectDescription": "Description"
+            }
+        ]
+    }
 
-        return(
+        render(){
+            return(
             <div className = "homeDiv">
-                hi!
+                <Container style = {{border: "5px solid red"}}>
+                    <Row>
+                        <Deck data = {this.state.data}></Deck>
+                    </Row>
+                </Container>
             </div>
 
         )
+}
 }
 
 
