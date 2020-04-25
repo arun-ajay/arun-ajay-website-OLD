@@ -8,10 +8,17 @@ class Projects extends React.Component {
     state = {
         data: [
             {
-                "projectTitle": "Project Title",
+                "projectTitle": "Reddi-lert",
+                "projectIcons": "Icons",
+                "projectDescription": "Notifies a user if specified content from a subreddit has just been posted.",
+                "projectURL": "https://github.com/arun-ajay/Reddi-lert"
+            },
+            {
+                "projectTitle": "Stuntin' Shunt",
                 "projectIcons": "Icons",
                 "projectDescription": "Description"
             }
+
         ]
     }
 

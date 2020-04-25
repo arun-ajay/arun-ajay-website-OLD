@@ -5,7 +5,7 @@ import {Container,Row,Col} from 'reactstrap';
 const Deck = (props) => {
 
   let deckArray = props.data.map(d => (
-      <Col sm= "2">
+      <Col md= "4">
         <ProjectCard title = {d.projectTitle} subtitle = {d.projectIcons} text = {d.projectDescription}/>
         <br></br>
       </Col>
