@@ -2,16 +2,22 @@ import React from 'react';
 import './App.css';
 import Header from "./components/header/header";
 import Home from "./components/pages/Home/Home"; //eslint-disable-next-line
+import Projects from "./components/pages/Projects/Projects";
 import { Container, Row, Col } from 'reactstrap';
+import {Route,Switch} from 'react-router-dom';
 function App() {
   return (
       <Container fluid className = "main">
-        <Row className = "nav">
-        <Header></Header>
-        </Row>
-        <Row className = "page">
-          <Home></Home>
-        </Row>
+          <Row className = "nav">
+          <Header></Header>
+          </Row>
+          <Switch>
+            <Row className = "page">
+              <Route path = "/" component = {Home} exact/>
+              <Route path = "/Home" component = {Home} exact/>
+              <Route path = "/Projects" component = {Projects} exact/>
+            </Row>
+          </Switch>
       </Container>
   );
 }
