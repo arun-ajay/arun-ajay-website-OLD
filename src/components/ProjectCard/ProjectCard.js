@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
   return (
     <div>
       <Card className = "projectCard">
-        <CardBody>
+        <CardBody className = "projectCardBody">
           <CardTitle className = "projectCardTitle">{props.title}</CardTitle>
           <CardSubtitle>{icons}</CardSubtitle>
           <CardText>{props.text}</CardText>

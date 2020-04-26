@@ -10,7 +10,11 @@ function JumboIntro(){
 
 
     var mediaArray = mediaData.map(d =>(
-      <Button onClick = {() => window.open(d.url,"_blank")} className = "jumboButton"><FontAwesomeIcon icon = {d.icon} size="3x" className = "jumboIcon"/></Button>
+      <span>
+        <Button onClick = {() => window.open(d.url,"_blank")} className = "jumboButton"><FontAwesomeIcon icon = {d.icon} size="3x" className = "jumboIcon"/></Button>
+        <div className = "divider"></div>
+      </span>
+      
     ))
     return (
 
