@@ -14,13 +14,13 @@ const JumboIntro = (props) => {
         <Container>
           <Row>
             <Col>
-            <Button className = "jumboButton"><FontAwesomeIcon icon = {faGithub} size="2x" className = "jumboIcon"/></Button>
-            <div class = "divider"></div>
-            <Button className = "jumboButton"><FontAwesomeIcon icon = {faLinkedinIn} size="2x" className = "jumboIcon"/></Button>
-            <div class = "divider"></div>
-            <Button className = "jumboButton"><FontAwesomeIcon icon = {faInstagram} size="2x" className = "jumboIcon"/></Button>
-            <div class = "divider"></div>
-            <Button className = "jumboButton"><FontAwesomeIcon icon = {faStackOverflow} size="2x" className = "jumboIcon"/></Button>
+              <Button className = "jumboButton"><FontAwesomeIcon icon = {faGithub} size="3x" className = "jumboIcon"/></Button>
+              <div class = "divider"></div>
+              <Button className = "jumboButton"><FontAwesomeIcon icon = {faLinkedinIn} size="3x" className = "jumboIcon"/></Button>
+              <div class = "divider"></div>
+              <Button className = "jumboButton"><FontAwesomeIcon icon = {faInstagram} size="3x" className = "jumboIcon"/></Button>
+              <div class = "divider"></div>
+              <Button className = "jumboButton"><FontAwesomeIcon icon = {faStackOverflow} size="3x" className = "jumboIcon"/></Button>
             </Col>
           </Row>
         </Container>

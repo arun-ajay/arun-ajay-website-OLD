@@ -27,25 +27,39 @@
 }
 
 .jumboButton{
-  background-color: #659DBD !important;
-  border: 1px solid black !important;
-  border-radius: .75em !important;
-}
+    background: linear-gradient(to left, #67b26b, #4ca2cb) !important;
+    border-radius: 50% !important;
+    /* width: 100px !important; */
+    text-align: center !important;
+    width: 70px;
+    height: 70px;
+    padding: 6px 0 !important;
+    line-height: 1.42 !important;
+    opacity: 1;
+    transition: all 0.3s ease-in-out !important;
+  }
 
-.container{
-  /* border: 5px solid red; */
-}
+
+  .jumboButton:hover {
+    box-shadow: 0 5px 15px #659DBD !important;
+    }
+
+
 
 .row{
   text-align: center; 
 }
 
-.col{
- /* border: 5px solid blue */
-}
+
 
 .jumboIcon{
   color :white;
+  opacity: .6;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.jumboIcon:hover{
+  opacity: 1;
 }
 
 .divider{

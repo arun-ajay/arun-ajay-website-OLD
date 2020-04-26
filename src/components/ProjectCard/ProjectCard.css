@@ -28,11 +28,51 @@
 }
 
 .projectButton{
-    background-color: #659DBD !important;
-    border: 1px solid black !important;
+    background: linear-gradient(to left, #67b26b, #4ca2cb) !important;
     border-radius: .75em !important;
+    width: 100px !important;
+    text-align: center !important;
 }
+
+
 
 .projectButtonIcon{
     color:white
 }
+
+.example_f {
+    border-radius: 4px;
+    background: linear-gradient(#4ca2cb, #67b26b) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: 22px !important;
+    padding: 20px !important;
+    width: 200px !important;
+    transition: all 0.4s !important;
+    cursor: pointer !important;
+    margin: 5px !important;
+    
+  }
+  .example_f span {
+    cursor: pointer !important;
+    display: inline-block !important;
+    position: relative !important;
+    transition: 0.4s !important;
+  }
+  .example_f span:after {
+    content: '\00bb' !important;
+    position: absolute !important;
+    opacity: 0 !important;
+    top: 0 !important;
+    right: -20px !important;
+    transition: 0.5s !important;
+  }
+  .example_f:hover span {
+    padding-right: 25px !important;
+  }
+  .example_f:hover span:after {
+    opacity: 1 !important;
+    right: 0 !important;
+  }
