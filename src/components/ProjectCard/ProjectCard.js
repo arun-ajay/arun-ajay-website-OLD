@@ -11,13 +11,13 @@ const ProjectCard = (props) => {
   var url = props.url
   var iconData = props.projectIcons
   let icons = iconData.map(d =>(
-    <FontAwesomeIcon icon = {d} size="2x" className = "projectCardIcon"/> 
+    <FontAwesomeIcon style = {{color: d.color}} icon = {d.icon} size="2x" className = "projectCardIcon"/> 
   ))
   return (
     <div>
       <Card className = "projectCard">
         <CardBody>
-          <CardTitle>{props.title}</CardTitle>
+          <CardTitle className = "projectCardTitle">{props.title}</CardTitle>
           <CardSubtitle>{icons}</CardSubtitle>
           <CardText>{props.text}</CardText>
           <Button onClick = {() => window.open(url,"_blank")} className = "projectButton"><FontAwesomeIcon icon = {faGithub} size="2x" className = "projectButtonIcon"/></Button>

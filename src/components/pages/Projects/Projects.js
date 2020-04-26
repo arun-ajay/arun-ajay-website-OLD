@@ -10,19 +10,11 @@ class Projects extends React.Component {
  
         render(){
             var deckArray = this.state.data.map(d => (
-                <Col sm = "3">
-                    <br></br>
-                    <ProjectCard title = {d.projectTitle} projectIcons = {d.projectIcons} text = {d.projectDescription} url = {d.projectURL}/>
-                    <br></br>
-                </Col>
+                <ProjectCard title = {d.projectTitle} projectIcons = {d.projectIcons} text = {d.projectDescription} url = {d.projectURL}/>
             ));
             return(
             <div className = "homeDiv">
-                <Container fluid> 
-                    <Row>
-                        {deckArray}
-                    </Row>
-                </Container>
+                {deckArray}
             </div>
 
         )
