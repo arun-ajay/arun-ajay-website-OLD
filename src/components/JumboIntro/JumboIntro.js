@@ -3,10 +3,16 @@ import { Jumbotron, Button } from 'reactstrap';
 import {Container,Row,Col} from 'reactstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub,faLinkedinIn,faInstagram, faStackOverflow} from '@fortawesome/free-brands-svg-icons'
+import {mediaData} from "./data"
 import "./JumboIntro.css"
 
-const JumboIntro = (props) => {
-  return (
+function JumboIntro(){
+
+
+    var mediaArray = mediaData.map(d =>(
+      <Button onClick = {() => window.open(d.url,"_blank")} className = "jumboButton"><FontAwesomeIcon icon = {d.icon} size="3x" className = "jumboIcon"/></Button>
+    ))
+    return (
 
       <Jumbotron>
         <h1 className = "name">Arun Ajay</h1>
@@ -14,13 +20,7 @@ const JumboIntro = (props) => {
         <Container>
           <Row>
             <Col>
-              <Button className = "jumboButton"><FontAwesomeIcon icon = {faGithub} size="3x" className = "jumboIcon"/></Button>
-              <div class = "divider"></div>
-              <Button className = "jumboButton"><FontAwesomeIcon icon = {faLinkedinIn} size="3x" className = "jumboIcon"/></Button>
-              <div class = "divider"></div>
-              <Button className = "jumboButton"><FontAwesomeIcon icon = {faInstagram} size="3x" className = "jumboIcon"/></Button>
-              <div class = "divider"></div>
-              <Button className = "jumboButton"><FontAwesomeIcon icon = {faStackOverflow} size="3x" className = "jumboIcon"/></Button>
+              {mediaArray}
             </Col>
           </Row>
         </Container>
@@ -28,6 +28,8 @@ const JumboIntro = (props) => {
       </Jumbotron>
 
   );
+
+  
 };
 
 export default JumboIntro;
