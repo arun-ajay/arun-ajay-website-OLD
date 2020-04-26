@@ -7,8 +7,8 @@
     height: 300px;
     border-radius: 40px !important;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    transition: .5s ease-in-out;
-    opacity: .6;
+    transition: .2s ease-in-out;
+    opacity: .5;
 }
 
 .projectCardBody{
@@ -52,39 +52,3 @@
     color:white
 }
 
-.example_f {
-    border-radius: 4px;
-    background: linear-gradient(#4ca2cb, #67b26b) !important;
-    border: none !important;
-    color: #FFFFFF !important;
-    text-align: center !important;
-    text-transform: uppercase !important;
-    font-size: 22px !important;
-    padding: 20px !important;
-    width: 200px !important;
-    transition: all 0.4s !important;
-    cursor: pointer !important;
-    margin: 5px !important;
-    
-  }
-  .example_f span {
-    cursor: pointer !important;
-    display: inline-block !important;
-    position: relative !important;
-    transition: 0.4s !important;
-  }
-  .example_f span:after {
-    content: '\00bb' !important;
-    position: absolute !important;
-    opacity: 0 !important;
-    top: 0 !important;
-    right: -20px !important;
-    transition: 0.5s !important;
-  }
-  .example_f:hover span {
-    padding-right: 25px !important;
-  }
-  .example_f:hover span:after {
-    opacity: 1 !important;
-    right: 0 !important;
-  }
