@@ -6,6 +6,7 @@ var colors = {
     "html" :  "#F16529",
     "css" :   "#264de4",
     "java": "#f89820",
+    "react": "#61dbf",
     "android": "#3DDC84",
     "javascript":"#F0DB4F",
     "jira": "#0052CC",
