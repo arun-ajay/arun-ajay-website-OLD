@@ -1,4 +1,4 @@
-import {faPython,faJira,faJava,faAndroid,faHtml5,faCss3,faJs, faReddit, faReact} from '@fortawesome/free-brands-svg-icons'
+import {faPython,faJira,faJava,faAndroid,faHtml5,faCss3,faJs, faReddit, faReact, faGoogle} from '@fortawesome/free-brands-svg-icons'
 
 var colors = {
     "python": "#306998",
@@ -7,16 +7,22 @@ var colors = {
     "css" :   "#264de4",
     "java": "#f89820",
     "android": "#3DDC84",
-    "javascript":"#F0DB4F"
+    "javascript":"#F0DB4F",
+    "jira": "#0052CC",
+    "google": "#34A853"
 }
 export const projectData = [
     {
         "projectTitle": "NYPL-Tenable-Jira",
         "projectIcons": [
             {
-            "icon":faPython,
-            "color": colors.python
-        }],
+                "icon":faPython,
+                "color": colors.python
+            },
+            {
+                "icon":faJira,
+                "color":colors.jira
+            }],
         "projectDescription": "Backend-system that organizes data from Tenable into a reduced ticket load for Jira ",
         "projectURL": "https://github.com/NYPL/NYPL-Tenable-Jira"
     },   
@@ -38,6 +44,10 @@ export const projectData = [
             {
                 "icon":faJs,
                 "color": colors.javascript
+            },
+            {
+                "icon":faGoogle,
+                "color": colors.google
             }
         ],
         "projectDescription": "A web application that scan's a tourist location and provides a tour of landmarks of the area via a human-like verbalization",

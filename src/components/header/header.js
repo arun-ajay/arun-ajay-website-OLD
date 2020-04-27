@@ -27,6 +27,9 @@ const Header = (props) => {
             <NavItem>
               <NavLink href="/Projects/" className= "link">Projects</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/Experiences/" className= "link">Experiences</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
