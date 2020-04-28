@@ -20,7 +20,7 @@ function JumboIntro(){
 
       <Jumbotron>
         <h1 className = "name">Arun Ajay</h1>
-        <p className = "title">Engineer and Aspiring Software Developer</p>
+        <p className = "title">Engineer and Aspiring Software Developer!</p>
         <Container>
           <Row>
             <Col>
