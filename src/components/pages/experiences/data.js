@@ -1,4 +1,4 @@
-import {faPython,faHtml5,faCss3,faJs,faAngular, faReact} from '@fortawesome/free-brands-svg-icons'
+import {faPython,faHtml5,faCss3,faJs,faAngular, faReact, faAws} from '@fortawesome/free-brands-svg-icons'
 import {faDatabase} from '@fortawesome/free-solid-svg-icons'
 var colors = {
     "python": "#306998",
@@ -8,7 +8,8 @@ var colors = {
     "javascript":"#F0DB4F",
     "sql": "#812878",
     "angular": "#b52e31",
-    "react": "#61dbf"
+    "react": "#61dbf",
+    "amazon": "ORANGE"
 }
 
 export const experiencesData = [
@@ -79,6 +80,10 @@ export const experiencesData = [
                 "icon":faDatabase,
                 "color":colors.sql
             },
+            {
+                "icon":faAws,
+                "color":colors.amazon
+            }
 
         ]
     },

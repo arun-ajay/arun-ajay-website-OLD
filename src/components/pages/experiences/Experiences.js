@@ -6,6 +6,8 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Container,Row,Col} from 'reactstrap';
+
 
 const Experiences = (props) => {
 
@@ -27,7 +29,13 @@ const Experiences = (props) => {
   ))
   return (
     <div className = "homeDiv">
-      {experiencesArray}
+      <Container fluid>
+      <Row className = "experiencesRow">
+        {experiencesArray}
+      </Row>
+      <br></br>
+      </Container>
+
     </div>
     
   );
