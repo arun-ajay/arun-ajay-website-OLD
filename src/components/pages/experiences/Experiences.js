@@ -20,7 +20,7 @@ const Experiences = (props) => {
           <CardSubtitle style ={{color: d.fontColor}}   className = "experienceCardSubtitle">{d.title}</CardSubtitle>
           <CardSubtitle style ={{color: d.fontColor}}  className = "experienceCardSubtitle">{d.location}</CardSubtitle>
           <CardSubtitle style ={{color: d.fontColor}}  className = "experienceCardSubtitle">{d.term}</CardSubtitle>
-  <CardSubtitle className = "experienceCardSubtitle"><br></br>{d.technologies.map(tech=>(
+          <CardSubtitle className = "experienceCardSubtitle"><br></br>{d.technologies.map(tech=>(
     <FontAwesomeIcon style = {{color: tech.color}} icon = {tech.icon} size="2x" className = "experienceCardIcon"/>))}</CardSubtitle>
         </CardBody>
       </Card>
@@ -33,7 +33,6 @@ const Experiences = (props) => {
       <Row className = "experiencesRow">
         {experiencesArray}
       </Row>
-      <br></br>
       </Container>
 
     </div>

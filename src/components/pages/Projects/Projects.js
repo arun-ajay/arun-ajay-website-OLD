@@ -1,24 +1,40 @@
 import React from 'react';
 import {Container,Row,Col} from 'reactstrap';
 import "./Projects.css";
-import ProjectCard from "../../ProjectCard/ProjectCard";
+import {
+    Card, CardText, CardBody,
+    CardTitle, CardSubtitle, Button
+  } from 'reactstrap';
 import {projectData} from "./data";
-class Projects extends React.Component {
-    state = {
-        data: projectData
-    }
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
+
+const Projects = (props) => {
+
+    var projectsArray = projectData.map(d =>(
+            <Card className = "projectCard">
+                <CardBody className = "projectCardBody">
+                    <CardTitle className = "projectCardTitle">{d.projectTitle}</CardTitle>
+                    <CardSubtitle>{d.projectIcons.map(d =>(
+                        <FontAwesomeIcon style = {{color: d.color}} icon = {d.icon} size="2x" className = "projectCardIcon"/> 
+                        ))}
+                    </CardSubtitle>
+                    <CardText>{d.projectDescription}</CardText>
+                    <Button onClick = {() => window.open(d.projectURL,"_blank")} className = "projectButton"><FontAwesomeIcon icon = {faGithub} size="2x" className = "projectButtonIcon"/></Button>
+                </CardBody>
+                </Card>
+    ))
  
-        render(){
-            var deckArray = this.state.data.map(d => (
-                <ProjectCard title = {d.projectTitle} projectIcons = {d.projectIcons} text = {d.projectDescription} url = {d.projectURL}/>
-            ));
             return(
             <div className = "homeDiv">
-                {deckArray}
+                <Container fluid>
+                    <Row className = "projectsRow">
+                        {projectsArray}
+                    </Row>
+                </Container>
             </div>
 
         )
-}
 }
 
 export default Projects;
