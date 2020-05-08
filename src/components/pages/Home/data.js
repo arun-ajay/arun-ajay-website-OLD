@@ -8,7 +8,7 @@ export const mediaData = [
     },
     {
         "icon": faLinkedin,
-        "url": "www.linkedin.com/in/arun-a-a0b349160"
+        "url": "https://www.linkedin.com/in/arun-a-a0b349160"
     },
     {
         "icon": faInstagram,
