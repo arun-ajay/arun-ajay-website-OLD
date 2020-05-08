@@ -12,7 +12,7 @@ import { faAutoprefixer } from '@fortawesome/free-brands-svg-icons';
 
 const Experiences = (props) => {
 
-  var experiencesArray = experiencesData.map(d =>(
+  var experiencesArray = experiencesData.reverse().map(d =>(
       <Col md = "auto" sm = "auto" xs = "auto" className="experienceCol">
         <Card className = "experienceCard">
           <CardImg top width="100%" src={require('./assets/'+d.image)} className = "experienceCardImage" alt = "blank"/>
