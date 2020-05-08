@@ -10,8 +10,13 @@
 }
 
 .projectsRow{
-  height: 40% !important;
+  margin: 25px !important;
   
+}
+
+.projectCol{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 

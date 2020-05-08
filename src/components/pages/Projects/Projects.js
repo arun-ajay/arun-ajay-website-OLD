@@ -12,6 +12,7 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons'
 const Projects = (props) => {
 
     var projectsArray = projectData.map(d =>(
+        <Col md = "auto" sm = "auto" xs = "auto" className="projectCol">
             <Card className = "projectCard">
                 <CardBody className = "projectCardBody">
                     <CardTitle className = "projectCardTitle">{d.projectTitle}</CardTitle>
@@ -22,12 +23,14 @@ const Projects = (props) => {
                     <CardText>{d.projectDescription}</CardText>
                     <Button onClick = {() => window.open(d.projectURL,"_blank")} className = "projectButton"><FontAwesomeIcon icon = {faGithub} size="2x" className = "projectButtonIcon"/></Button>
                 </CardBody>
-                </Card>
+            </Card>
+        </Col>
+
     ))
  
             return(
             <div className = "homeDiv">
-                <Container fluid>
+                <Container fluid = "xs">
                     <Row className = "projectsRow">
                         {projectsArray}
                     </Row>
