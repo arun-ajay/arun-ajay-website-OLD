@@ -8,6 +8,8 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faHome} from '@fortawesome/free-solid-svg-icons'
 
 import "./header.css" //eslint-disable-next-line
 
@@ -22,7 +24,7 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/Home/" className= "link">Home</NavLink>
+              <NavLink href="/Home/" className= "link"><FontAwesomeIcon icon = {faHome} size="1x" className = "projectButtonIcon"/></NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/Projects/" className= "link">Projects</NavLink>
