@@ -14,7 +14,6 @@ const Home = (props) => {
         </span>
         
       ))
-
         return(
             <div className = "homeDiv">
                 <Jumbotron>

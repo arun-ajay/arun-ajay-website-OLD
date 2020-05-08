@@ -10,8 +10,13 @@
   overflow-y: auto;
 }
 
+.experienceCol{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .experienceCardImage{
-    width: 100%;
+    width: 100% !important;
     object-fit: scale-down !important;
     height: 10vw !important;
 }
@@ -27,7 +32,7 @@
     margin: 0px auto;
     margin-right: 50px !important;
     margin-left: 50px !important;
-    width: 400px;
+    width: 400px !important;
     height: 100%;
     transition: .2s ease-in-out;
     opacity: .5;
