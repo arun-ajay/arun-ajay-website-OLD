@@ -95,6 +95,6 @@ export const experiencesData = [
         "term" : "Summer 2020",
         "fontColor" : "#0061aa",
         "technologies":[]
-    },
+    }
     
 ]

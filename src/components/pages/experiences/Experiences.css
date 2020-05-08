@@ -22,14 +22,12 @@
 }
 
 .experiencesRow{
-  height: 40% !important;
   margin: 25px !important;
 }
 
 
 .experienceCard{
     /* border: 5px solid red !important; */
-    margin: 0px auto;
     margin-right: 50px !important;
     margin-left: 50px !important;
     width: 400px !important;

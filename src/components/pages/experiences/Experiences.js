@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Container,Row,Col} from 'reactstrap';
+import { faAutoprefixer } from '@fortawesome/free-brands-svg-icons';
 
 
 const Experiences = (props) => {
@@ -29,9 +30,9 @@ const Experiences = (props) => {
   return (
     <div className = "homeDiv">
       <Container fluid = "xs">
-      <Row className = "experiencesRow">
-        {experiencesArray}
-      </Row>
+        <Row className = "experiencesRow">
+          {experiencesArray}
+        </Row>
       </Container>
 
     </div>
