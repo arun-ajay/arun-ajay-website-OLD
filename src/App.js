@@ -13,7 +13,7 @@ function App() {
     <div>
       <Helmet>
         <title>Arun Ajay</title>
-        <meta name="My name is Arun Ajay. I'm an aspiring software engineer with a background in Biomedical Engineering. I'm currently wrapping up my final round of 
+        <meta name="description" content="My name is Arun Ajay. I'm an aspiring software engineer with a background in Biomedical Engineering. I'm currently wrapping up my final round of 
         course for my Computer Science degree. Come visit to check out my latest projects and work experiences!"/>
       </Helmet>
       <Container fluid className = "main">
